@@ -32,11 +32,11 @@ const connect = () => {
     });
 };
 
-app.use(cors({
-    origin: 'https://tweety-backend.onrender.com', 
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, 
-  }));
+// app.use(cors({
+//     origin: 'https://tweety-backend.onrender.com', 
+//     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     credentials: true, 
+//   }));
 
 // include json
 app.use(cookieParser());
