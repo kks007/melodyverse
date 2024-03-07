@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const PostSchema = new mongoose.Schema(
+const TweetSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
@@ -19,4 +19,4 @@ const PostSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-export default mongoose.model("Post", PostSchema);
+export default mongoose.model("Tweet", TweetSchema);
