@@ -53,7 +53,7 @@ const EditProfile = ({ setOpen }) => {
         // Upload completed successfully, now we can get the download URL
         getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
           try {
-            const updateProfile = await axios.put(`/users/${currentUser._id}`, {
+            const updateProfile = await axios.put(`https://tweety-backend.onrender.com/api/users/${currentUser._id}`, {
               profilePicture: downloadURL,
             });
 
